@@ -1,4 +1,4 @@
-package map;
+package exercicios.map;
 // Dada a população estimada de alguns estados do NE brasileiro, faça:
 // Estado = PE - População = 9.616.621
 // Estado = AL - População = 3.351.543
