@@ -24,15 +24,16 @@ import java.util.Scanner;
 
 public class NumeroFeliz {
     public static void main(String[] args) {
-	    Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt() ; // pede para digitar o numero
+	    Scanner scan = new Scanner(System.in); // sempre que precisar uma leitura pelo teclado
+        //int n = scan.nextInt() ; // pede para digitar o numero
         
-        num = 0;
+      /*  num = 0;
 
         while (num >= 1 && num != n);
         int dig = num%10;
         res = res+(dig*dig);
-        num = num/10;
+        num = num/10; */
+        
         // tenho que separar os digitos do numero informado
         // encontrar o quadrado. n * n
         // Somar os quadrados.
