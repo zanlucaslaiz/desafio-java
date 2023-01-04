@@ -20,17 +20,23 @@ Para cada caso de teste, produza o número mínimo de pizzas necessário, confor
 Existe apenas 1 amigo que precisa 5 fatias. Se ele mandar 1 pizza, ele receberá apenas 4 fatias. Assim, pelo menos 2 pizzas devem ser encomendadas
 para ter o número necessário de fatias. */
 
+
 import java.util.Scanner;
+import java.lang.Math;
 
 public class QuantidadeNecessaria {
-    public static void main(String[] args) {
-        final int SLICE = 4;
-        Scanner scanner = new Scanner(System.in);
-    
-        int T = scanner.nextInt();
-    
-        // TODO: Retorne o número de pizzas necessárias para atender o pedido. 
-          
-        scanner.close();
-    }
+  public static void main(String[] args) {
+  final int SLICE = 4;
+  Scanner scanner = new Scanner(System.in);
+
+  int NAmigos = scanner.nextInt(); // NAmigos = quantidade de testes
+
+      for (int i = 1; i <= NAmigos; i++) {
+        double amigos = scanner.nextInt()*scanner.nextInt();
+        double npizzas = Math.ceil(amigos/SLICE);
+        System.out.println((int)npizzas); // (int) -> conversão do double para int
+      }
+      scanner.close();
+  }
+
 }

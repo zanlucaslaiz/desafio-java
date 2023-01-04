@@ -21,34 +21,36 @@
 // 1² + 0² + 0² = 1
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class NumeroFeliz {
     public static void main(String[] args) {
 	    Scanner scan = new Scanner(System.in); // sempre que precisar uma leitura pelo teclado
-        //int n = scan.nextInt() ; // pede para digitar o numero
-        
-      /*  num = 0;
+        int n = scan.nextInt() ; // pede para digitar o numero
+        int sum = 0;
+        int num = n;
 
-        while (num >= 1 && num != n);
-        int dig = num%10;
-        res = res+(dig*dig);
-        num = num/10; */
-        
-        // tenho que separar os digitos do numero informado
-        // encontrar o quadrado. n * n
-        // Somar os quadrados.
+        while (num>9){
+          while (num>0){
+            int mod = num % 10;
+            sum = sum + (int) Math.pow(mod,2);
+            num = num /10;
+          }
+          num = sum;
+          sum = 0;
+          
+          }
+          if (num == 1){
+            System.out.println(true);
+          }
+          else{
+            System.out.println(false);
+          }
+          
 
         
-
+    
         scan.close();
-
-
-       /* if eFeliz == true;
-        System.out.println(true);
-
-        else;
-        System.out.println(false);
-        scan.close(); */
     }
 }
     

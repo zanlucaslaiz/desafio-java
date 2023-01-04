@@ -16,6 +16,7 @@
 // Soma dos dígitos = 2 + 3 + 4 = 9
 // Resultado = 24 - 9 = 15
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DiferencaDigitos {
@@ -27,11 +28,11 @@ public class DiferencaDigitos {
    String numeroEmString = String.valueOf(numero);
    String[] split = numeroEmString.split("");
 
-   //int[] ints = Arrays.stream(split).mapToInt(Integer::new).toArray();
+   int[] ints = Arrays.stream(split).mapToInt(Integer::new).toArray();
 
        // TODO: Retorne a diferença entre o produto e a soma dos dígitos.
        
-       scan.close();
+        scan.close();
    }
 }
 
